@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Станьте успешным криптоинвестором за 6 недель с нашим онлайн-курсом!">
+    <meta name="keywords" content="криптоинвестиции, блокчейн, биткоин, онлайн-курс">
+    <title>Курс по криптоинвестициям</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">КриптоМастер</div>
+            <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+            <ul class="nav-menu">
+                <li><a href="#description">О курсе</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="#subscribe">Подписка</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Станьте криптоинвестором за 6 недель!</h1>
+            <p>Научитесь зарабатывать на криптовалютах с нуля и управляйте своими инвестициями уверенно.</p>
+            <button class="cta-button" onclick="openModal()">Записаться сейчас</button>
+        </div>
+    </header>
+    <main>
+        <section id="description" class="animate-on-scroll">
+            <h2>О нашем курсе</h2>
+            <p>Наш курс разработан для новичков, которые хотят освоить криптоинвестиции. Вы узнаете, как работает блокчейн, как анализировать рынок и минимизировать риски, чтобы ваши вложения приносили прибыль.</p>
+        </section>
+        <section id="benefits" class="animate-on-scroll">
+            <h2>Ваши преимущества</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="icon">📚</span>
+                    <p>Практические уроки с реальными примерами</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">👨‍🏫</span>
+                    <p>Поддержка от опытных инвесторов</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">🛠️</span>
+                    <p>Эксклюзивные инструменты анализа</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">🎓</span>
+                    <p>Сертификат по окончании курса</p>
+                </div>
+            </div>
+        </section>
+        <section id="images" class="animate-on-scroll">
+            <h2>Курс в действии</h2>
+            <div class="image-gallery">
+                <img src="https://frmall.ru/upload/iblock/875/87577c408626438b51d8c3da07ad36a4.jpg" alt="Цены криптовалюты" class="gallery-img">
+                <img src="https://cs13.pikabu.ru/post_img/2022/12/19/0/1671397673110051205.jpg" alt="График роста инвестиций" class="gallery-img">
+            </div>
+        </section>
+        <section id="offer" class="animate-on-scroll">
+            <h2>Специальное предложение!</h2>
+            <p>Запишитесь до конца недели и получите скидку 20%!</p>
+            <p id="timer">Осталось: <span id="countdown"></span></p>
+            <button class="cta-button" onclick="openModal()">Воспользоваться предложением</button>
+        </section>
+        <section id="testimonials" class="animate-on-scroll">
+            <h2>Что говорят наши студенты</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <img src="https://i1.sndcdn.com/artworks-000475478994-0cu1hl-t500x500.jpg" alt="Анна, студентка курса">
+                    <p>"Курс помог мне разобраться в криптовалютах и начать зарабатывать!"</p>
+                    <p><strong>Анна, 28 лет</strong></p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://habrastorage.org/getpro/moikrug/uploads/user/100/088/703/8/avatar/db0a589424a54cae676112f896935ea2.jpeg" alt="Михаил, студент курса">
+                    <p>"Понятные уроки и отличная поддержка. Рекомендую всем!"</p>
+                    <p><strong>Михаил, 34 года</strong></p>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="animate-on-scroll">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-item">
+                <button class="faq-question">Что такое криптовалюта?</button>
+                <div class="faq-answer">
+                    <p>Криптовалюта — это цифровая валюта, защищённая криптографией, которая работает на блокчейне.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Нужен ли опыт в инвестициях?</button>
+                <div class="faq-answer">
+                    <p>Нет, курс подходит для новичков и начинается с основ.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Как проходит обучение?</button>
+                <div class="faq-answer">
+                    <p>Обучение проходит онлайн, с доступом к видеоурокам и практическим заданиям.</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="animate-on-scroll">
+            <h2>Наши достижения</h2>
+            <div class="achievement-box">
+                <p><span class="counter" data-target="750">0</span> студентов</p>
+                <p><span class="counter" data-target="4">0</span> года на рынке</p>
+                <p><span class="counter" data-target="200">0</span> успешных инвесторов</p>
+            </div>
+        </section>
+        <section id="subscribe" class="animate-on-scroll">
+            <h2>Подпишитесь на обновления</h2>
+            <p>Получите бесплатный гайд по криптоинвестициям и скидку 10% на курс!</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 КриптоМастер. Все права защищены.</p>
+        <div class="footer-links">
+            <a href="#privacy">Политика конфиденциальности</a>
+            <a href="#terms">Условия использования</a>
+        </div>
+    </footer>
+    <button id="back-to-top" title="Наверх">↑</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Запись на курс</h2>
+            <form id="enroll-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
