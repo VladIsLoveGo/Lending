@@ -7,7 +7,7 @@
     <meta name="keywords" content="криптоинвестиции, блокчейн, биткоин, онлайн-курс">
     <title>Курс по криптоинвестициям</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -25,7 +25,7 @@
         <div class="hero">
             <h1>Станьте криптоинвестором за 6 недель!</h1>
             <p>Научитесь зарабатывать на криптовалютах с нуля и управляйте своими инвестициями уверенно.</p>
-            <button class="cta-button" onclick="openModal()">Записаться сейчас</button>
+            <button class="cta-button">Записаться сейчас</button>
         </div>
     </header>
     <main>
@@ -65,7 +65,7 @@
             <h2>Специальное предложение!</h2>
             <p>Запишитесь до конца недели и получите скидку 20%!</p>
             <p id="timer">Осталось: <span id="countdown"></span></p>
-            <button class="cta-button" onclick="openModal()">Воспользоваться предложением</button>
+            <button class="cta-button">Воспользоваться предложением</button>
         </section>
         <section id="testimonials" class="animate-on-scroll">
             <h2>Что говорят наши студенты</h2>
@@ -105,10 +105,31 @@
         </section>
         <section id="achievements" class="animate-on-scroll">
             <h2>Наши достижения</h2>
-            <div class="achievement-box">
-                <p><span class="counter" data-target="750">0</span> студентов</p>
-                <p><span class="counter" data-target="4">0</span> года на рынке</p>
-                <p><span class="counter" data-target="200">0</span> успешных инвесторов</p>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <span class="counter" data-target="750">0</span>
+                    <p>студентов</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="counter" data-target="4">0</span>
+                    <p>года на рынке</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="counter" data-target="200">0</span>
+                    <p>успешных инвесторов</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="counter" data-target="10">0</span>
+                    <p>наград</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="counter" data-target="500">0</span>
+                    <p>отзывов</p>
+                </div>
+                <div class="achievement-item">
+                    <span class="counter" data-target="99">0</span>
+                    <p>% удовлетворённости</p>
+                </div>
             </div>
         </section>
         <section id="subscribe" class="animate-on-scroll">
@@ -130,7 +151,7 @@
     <button id="back-to-top" title="Наверх">↑</button>
     <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">×</span>
+            <span class="close">×</span>
             <h2>Запись на курс</h2>
             <form id="enroll-form">
                 <input type="text" placeholder="Ваше имя" required>
